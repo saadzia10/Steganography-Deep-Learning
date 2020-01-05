@@ -1,2 +1,5 @@
 # Steganography-Deep-Learning
-END-TO-END TRAINED CNN Paper implementation for "ENCODER-DECODER NETWORKS FOR IMAGE STEGANOGRAPHY"
+### Paper implementation for "END-TO-END TRAINED CNN ENCODER-DECODER NETWORKS FOR IMAGE STEGANOGRAPHY" in Tensorflow 2.0.
+#### Paper link: https://arxiv.org/pdf/1711.07201.pdf
+
+Work in progress...
