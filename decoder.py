@@ -15,7 +15,7 @@ class DecoderNetwork:
         self.conv_4 = Conv2D(8, 3, padding='same', activation='relu', kernel_initializer='he_normal')(self.conv_3)
         self.conv_5 = Conv2D(3, 3, padding='same', activation='relu', kernel_initializer='he_normal')(self.conv_4)
         self.conv_6 = Conv2D(3, 3, padding='same', activation='relu', kernel_initializer='he_normal')(self.conv_5)
-        self.decoded_output = Conv2D(1, self.target_image_shape[-1], padding='same', activation='relu', kernel_initializer='he_normal', name='decoded_output')(self.conv_6)
+        self.decoded_output = Conv2D(self.target_image_shape[-1], self.target_image_shape[-1], padding='same', activation='relu', kernel_initializer='he_normal', name='decoded_output')(self.conv_6)
         
         self.decoder_tensors = [self.conv_1, self.conv_2,\
                                 self.conv_3, self.conv_4, self.conv_5,\
